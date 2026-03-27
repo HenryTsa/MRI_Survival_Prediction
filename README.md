@@ -1,19 +1,38 @@
-# MRI_Survival_Prediction
-🧠 Brain Tumor Survival Prediction (BrATS 2020)
-Project Type: Academic Team Project (NTNU CS)
+# Brain Tumor Survival Prediction (BrATS 2020)
+**Award:** Honorable Mention in Graduation Project Competition (NTNU CS)
 
-Award: Honorable Mention in Graduation Project Competition
+---
 
-👤 My Contributions & Role
-Although this repository reflects the collective effort of my team, my primary responsibilities and technical contributions include:
+## 👤 My Role & Key Contributions
+In this team project, I focused on the **Model Integration and Critical Feature Analysis** stages. My work was pivotal in identifying the key biological indicators and significantly improving prediction accuracy.
 
-Feature Engineering (Radiomics): Spearheaded the extraction of 1,000+ radiomics features using PyRadiomics to capture tumor heterogeneity.
+* **Hybrid Feature Analysis:** Spearheaded the integration of 1,000+ Radiomics features with CNN-extracted deep features, capturing both global morphology and local textures.
+* **Feature Selection & Optimization:** Implemented **Lasso Regression** and **Random Forest** to filter out redundant data, successfully identifying the top 20 most predictive features.
+* **Performance Breakthrough:** Through meticulous feature engineering and hyperparameter tuning, I led the team to reduce the **MSE from 150k to 72k (a 52% improvement)**.
+* **Explainable AI (XAI):** Developed feature importance visualizations to provide clinical interpretability for survival predictions.
 
-Model Architecture: Developed the Hybrid Model logic that fuses CNN-based deep features with traditional radiomics features.
+---
 
-Optimization: Implemented Lasso Regression for feature selection, contributing to a 52% reduction in MSE (from 150k to 72k).
+## 📊 Experimental Results
+Below are the key visual outcomes from our survival prediction model:
 
-Performance Evaluation: Conducted rigorous validation using Random Forest feature importance analysis to ensure model interpretability.
+### 1. Feature Importance Ranking
+*Description: This chart showcases the most significant Radiomics and Deep Features identified during my analysis, providing insights into tumor heterogeneity.*
+![Feature Importance](https://raw.githubusercontent.com/HenryTsa/MRI_Survival_Prediction/main/images/importance.png)
 
-🛠️ Tech Stack
-Python, PyTorch, PyRadiomics, Scikit-learn, Lasso Regression, Random Forest
+### 2. Prediction Performance (MSE Comparison)
+*Description: Comparison between the baseline model and our optimized Hybrid Model, showing the 52% error reduction.*
+![Result Comparison](https://raw.githubusercontent.com/HenryTsa/MRI_Survival_Prediction/main/images/results.png)
+
+---
+
+## 🛠️ Tech Stack
+* **Language:** Python
+* **Core Libraries:** PyTorch, Scikit-learn, PyRadiomics, Pandas, Matplotlib
+* **Algorithms:** CNN (Deep Feature Extraction), Lasso Regression (Feature Selection), Random Forest (Survival Regression)
+
+---
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/你的帳號/MRI_Survival_Prediction.git](https://github.com/你的帳號/MRI_Survival_Prediction.git)
