@@ -17,12 +17,15 @@ In this team project, I focused on the **Model Integration and Critical Feature 
 Below are the key visual outcomes from our survival prediction model:
 
 ### 1. Feature Importance Ranking
-*Description: This chart showcases the most significant Radiomics and Deep Features identified during my analysis, providing insights into tumor heterogeneity.*
-![Feature Importance](https://raw.githubusercontent.com/HenryTsa/MRI_Survival_Prediction/main/images/importance.png)
+*Description: This chart showcases the most significant features identified during my analysis. I used Random Forest and Lasso to rank these indicators, providing insights into tumor heterogeneity.*
 
-### 2. Prediction Performance (MSE Comparison)
-*Description: Comparison between the baseline model and our optimized Hybrid Model, showing the 52% error reduction.*
-![Result Comparison](https://raw.githubusercontent.com/HenryTsa/MRI_Survival_Prediction/main/images/results.png)
+![Feature Importance](images/feature_importance.png) 
+![Feature Importance](images/all_feature_importance.png)
+
+### 2. Prediction Performance (Random Forest Regression)
+*Description: The regression results showing the correlation between predicted and actual survival days. Our optimized Hybrid Model achieved a 52% error reduction compared to the baseline.*
+
+![Result Comparison](images/result_random_forest.png)
 
 ---
 
